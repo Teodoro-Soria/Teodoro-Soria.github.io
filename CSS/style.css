@@ -7,12 +7,15 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 /* navbar */
 .navbar {
-  background-color: rgba(51, 51, 51, 0.295);
-  position: fixed;
+  background-color: rgba(0, 0, 0, 0.671);
+  /* background: rgba(51, 51, 51, 0.295); */
+  /* position: fixed; */
   overflow: hidden;
   top: 0;
   width: 100%;
@@ -28,6 +31,7 @@ body {
   padding: 15px;
   text-decoration: none;
   font-size: 17px;
+  transition: 0.5s;
 }
 
 .navbar a:hover {
@@ -78,14 +82,11 @@ body {
 /* header */
 
 .header-img {
-  /* background-image: url(/images/clouds-sun.jpg);
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   background: grey;
-  background-image: radial-gradient(#006da079, #2b2b2b, #414141);
+  /* background-image: radial-gradient(#006da079, #2b2b2b, #414141); */
+  /* background-image: radial-gradient(#006da079, #bebebe, #e6e6e6); */
+  /* background-image: radial-gradient(#006da079, #dbdbdb, #e6e6e6); */
+  background-image: radial-gradient(#ececec79, #00588179, #006da079);
   background-size: 400%;
   animation: bg-animation 15s infinite alternate;
   /* background: linear-gradient(to right, #141414, #2b2b2b, #414141); */
@@ -103,8 +104,9 @@ body {
 
 .mySlides {
   display: none;
-
   padding: 5rem 6rem;
+  /* margin: 3rem 0; */
+  /* background: rgb(216, 216, 216); */
   background: rgb(216, 216, 216);
 }
 
@@ -125,6 +127,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /* background: rgb(216, 216, 216); */
   background: rgb(216, 216, 216);
 }
 
@@ -147,6 +150,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #006da079;
+  padding: 5rem 0;
 }
 
 .about-column {
@@ -214,23 +218,64 @@ body {
 
 /* end of about */
 
-/* projects */
+/* PROJECTS */
+/* Start of Tab Section */
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  /* padding: 1rem 0; */
+  /* border-bottom: 1px solid black; */
+  background: rgba(0, 0, 0, 0.671);
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 2rem;
+  /* padding: 2rem; */
+  color: #f2f2f2;
+}
+
+.tab.active {
+  background-color: #ccc;
+}
+
+.tab:hover {
+  background-color: #aaa;
+}
+
+/* .tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
+} */
+/* End of Tab Section */
+
+/* Start of Projects Section */
 
 .projects {
   /* background-color: rgba(0, 247, 255, 0.349); */
-  padding: 100px 0;
+  background: rgb(216, 216, 216);
+  padding: 80px 0;
 }
 
 .project-heading {
-  font-family: "Abril Fatface", cursive;
   font-size: 3.5rem;
-  color: rgb(255, 255, 255);
+  color: rgb(48, 48, 48);
 }
 
 .project-text {
-  font-family: "Abril Fatface", cursive;
   font-size: 2rem;
-  color: rgb(255, 255, 255);
+  color: rgb(48, 48, 48);
   padding-bottom: 5rem;
 }
 
@@ -238,8 +283,6 @@ body {
   margin-bottom: 30px;
   font-family: "Roboto Slab", serif;
 }
-
-/* start */
 
 .project-container {
   position: relative;
@@ -281,8 +324,6 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
-/* end */
 
 @media screen and (max-width: 700px) {
   .project-text {
@@ -330,7 +371,7 @@ body {
   /* padding: 16px; */
   padding: 2rem;
   text-align: center;
-  background-color: rgb(216, 216, 216);
+  background-color: #0096db79;
 }
 
 @media (max-width: 700px) {
@@ -338,7 +379,7 @@ body {
     flex-direction: column;
   }
 }
-/* end of projects */
+/* End of PROJECTS */
 
 /* contact */
 
@@ -358,72 +399,6 @@ body {
   padding: 10px 20px;
   height: 90vh;
   background-color: #006da079;
-}
-
-/* contact form */
-
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type="submit"] {
-  background-color: #4caf50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-.form-container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.form-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .col-25,
-  .col-75,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
-  }
 }
 
 @media screen and (max-width: 700px) {
@@ -489,7 +464,9 @@ footer {
 /* text color */
 .light-text {
   color: #ebebeb;
-  text-shadow: 0 0 2px #011520;
+  /* this below adds outline */
+  /* text-shadow: 0 0 2px #011520; */
+  /* This above adds outline */
 }
 /* buttons */
 .btn {
@@ -501,6 +478,7 @@ footer {
   cursor: pointer;
   text-decoration: none;
   font-family: "Roboto Slab", serif;
+  transition: 0.5s;
 }
 
 .default {
@@ -509,6 +487,7 @@ footer {
   color: #ebebeb;
   background: #006da079;
   margin: 0 5px;
+  transition: 0.5s;
 }
 
 .default:hover {
@@ -521,11 +500,13 @@ footer {
   margin: 4px;
   border-color: #242424;
   color: #242424;
+  transition: 0.5s;
 }
 
 .project-btn:hover {
-  border-color: #004ba079;
-  background-color: #004ba079;
+  /* border-color: #004ba079; */
+  border-color: #c1c2c4;
+  background-color: rgb(216, 216, 216);
 }
 
 /* contact button */

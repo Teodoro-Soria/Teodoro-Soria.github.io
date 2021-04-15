@@ -35,7 +35,7 @@
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
-      <a href="/images/Main-Resume.pdf" target="_blank">Resume</a>
+      <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
@@ -48,66 +48,73 @@
 
     <!-- skills carousel -->
 
-    <div class="mySlides">
-      <h1><b>Skills</b></h1>
-      <h1>
-        <i
-          >Dont worry, your code is safe. I know version control with GitHub.</i
-        >
-      </h1>
-      <img class="skill-image" src="/images/github.png" alt="GitHub Logo" />
-    </div>
+    <div class="skills-carousel">
+      <div class="mySlides">
+        <h1><b>Skills</b></h1>
+        <h1>
+          <i
+            >Dont worry, your code is safe. I know version control with
+            GitHub.</i
+          >
+        </h1>
+        <img class="skill-image" src="/images/github.png" alt="GitHub Logo" />
+      </div>
 
-    <div class="mySlides">
-      <h1><b>Skills</b></h1>
-      <h1>
-        <i
-          >I know some pretty cool libraries too. Like BootStrap, it helps me
-          code a bit faster!</i
-        >
-      </h1>
-      <img
-        class="skill-image"
-        src="/images/Bootstrap.png"
-        alt="Bootstrap Logo"
-      />
-    </div>
+      <div class="mySlides">
+        <h1><b>Skills</b></h1>
+        <h1>
+          <i
+            >I know some pretty cool libraries too. Like BootStrap, it helps me
+            code a bit faster!</i
+          >
+        </h1>
+        <img
+          class="skill-image"
+          src="/images/Bootstrap.png"
+          alt="Bootstrap Logo"
+        />
+      </div>
 
-    <div class="mySlides">
-      <h1><b>Skills</b></h1>
-      <h1>
-        <i
-          >Hey check it out, I aslo know some Python! And currently playing with
-          it's many libraries.</i
-        >
-      </h1>
-      <img class="skill-image" src="/images/python.png" alt="Python Logo" />
-    </div>
+      <div class="mySlides">
+        <h1><b>Skills</b></h1>
+        <h1>
+          <i
+            >Hey check it out, I aslo know some Python! And currently playing
+            with it's many libraries.</i
+          >
+        </h1>
+        <img class="skill-image" src="/images/python.png" alt="Python Logo" />
+      </div>
 
-    <div class="mySlides">
-      <h1><b>Skills</b></h1>
-      <h1>
-        <i
-          >Oh yes, I aslo know some React. It really helps with creating
-          interactive UIs.</i
-        >
-      </h1>
-      <img
-        class="skill-image"
-        src="/images/react-logo.png"
-        alt="Reactjs Logo"
-      />
-    </div>
+      <div class="mySlides">
+        <h1><b>Skills</b></h1>
+        <h1>
+          <i
+            >Oh yes, I aslo know some React. It really helps with creating
+            interactive UIs.</i
+          >
+        </h1>
+        <img
+          class="skill-image"
+          src="/images/react-logo.png"
+          alt="Reactjs Logo"
+        />
+      </div>
 
-    <div class="mySlides">
-      <h1><b>Skills</b></h1>
-      <h1>
-        <i
-          >Did you need something built with Wordpress? I can help with that
-          too!</i
-        >
-      </h1>
-      <img class="skill-image" src="/images/wplogo.png" alt="wordpress logo" />
+      <div class="mySlides">
+        <h1><b>Skills</b></h1>
+        <h1>
+          <i
+            >Did you need something built with Wordpress? I can help with that
+            too!</i
+          >
+        </h1>
+        <img
+          class="skill-image"
+          src="/images/wplogo.png"
+          alt="wordpress logo"
+        />
+      </div>
     </div>
 
     <!-- Skill logo row -->
@@ -120,7 +127,7 @@
     </div>
 
     <!-- about -->
-    <div class="about-row">
+    <div id="about" class="about-row">
       <div class="about-column">
         <img
           class="about-img"
@@ -132,8 +139,8 @@
       <div class="about-column-text">
         <!-- <h2>Hey, I'm Ricardo Soria</h2> -->
         <p class="about-text">
-          <span class="big-about-text">Hello, I'm Teodoro Soria</span> and from
-          the moment I produced “Hello World” in the console of my first
+          <span class="big-about-text">Hello, I'm Teodoro </span> and from the
+          moment I produced “Hello World” in the console of my first
           application, I knew I was hooked on the the world of software
           development. it’s offered an engaging challenge to continually learn
           and improve my skills in creating high-quality software and web pages.
@@ -146,206 +153,421 @@
     <!--End About -->
 
     <!-- Projects -->
+    <!-- Start of Tabs -->
+    <ul class="tabs">
+      <li data-tab-target="#sites" class="active tab">Websites</li>
+      <li data-tab-target="#other-work" class="tab">Projects</li>
+    </ul>
+    <!-- End of Tabs -->
+    <div class="tab-content">
+      <div id="sites" data-tab-content class="active">
+        <!-- Start of Sites Section -->
 
-    <div class="projects header-img" id="projects">
-      <h2 class="project-heading">Projects!</h2>
-      <p class="project-text">Check out some of the projects ive worked on.</p>
+        <div class="projects header-img" id="projects">
+          <h2 class="project-heading">Websites</h2>
+          <p class="project-text">
+            Check out some of the websites ive worked on.
+          </p>
 
-      <div class="project-row">
-        <div class="column">
-          <div class="card">
-            <div class="project-container">
-              <img
-                src="/images/dice copy.png"
-                alt="diceroll app"
-                class="project-image"
-              />
-              <div class="project-overlay">
-                <div class="overlay-text">
-                  This is a dice roll web app, it’s a dice roll on the go. The
-                  project uses Javascript to process the random output, with
-                  some HTML and CSS to help give the app some pop.
+          <div class="project-row">
+            <div class="column">
+              <div class="card">
+                <div class="project-container">
+                  <img
+                    src="/images/cielifts copy.png"
+                    alt="converse industrial equipment"
+                    class="project-image"
+                  />
+                  <div class="project-overlay">
+                    <div class="overlay-text">
+                      This website was created for a local construction company
+                      using Wordpress. This website showcases heavy machinery,
+                      with contact form and SEO implementation. Wordpress
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <h3>Dice Roll Web App</h3>
-            <p class="project-skill">HTML CSS Javascript</p>
-
-            <!-- <a class="btn project-btn" href="#"> View Project </a> -->
-            <a
-              class="btn project-btn"
-              href="https://github.com/rsoria21/DiceRoll"
-              target="_blank"
-            >
-              Source Code
-            </a>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <div class="project-container">
-              <img
-                src="/images/drumset copy.png"
-                alt="drumset web app"
-                class="project-image"
-              />
-              <div class="project-overlay">
-                <div class="overlay-text">
-                  This web app is an awesome drum set, press the buttons on the
-                  screen to play the instrument. This project contains HTML for
-                  formatting, CSS for style and photos, and finally Javascript
-                  for the brains and sounds.
-                </div>
-              </div>
-            </div>
-            <h3>DrumSet Web App</h3>
-            <p class="project-skill">HTML CSS Javascript</p>
-            <!-- <a class="btn project-btn" href="#"> View Project </a> -->
-            <a
-              class="btn project-btn"
-              href="https://github.com/rsoria21/drumSet"
-              target="_blank"
-            >
-              Source Code
-            </a>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <div class="project-container">
-              <img
-                src="/images/todolist copy.png"
-                alt="Avatar"
-                class="project-image"
-              />
-              <div class="project-overlay">
-                <div class="overlay-text">
-                  This is a web app that is using NPM libraries, such as
-                  express, body parser, and EJS for templating. The web app adds
-                  items and deletes them with a click of a button. New to do
-                  list can be created by adding a “/” and a name of your
-                  choice(this will be the list name.)
-                </div>
+                <h3>CIElifts</h3>
+                <p class="project-skill">Wordpress YoastSeo</p>
+                <a
+                  class="btn project-btn"
+                  href="https://cielifts.com"
+                  target="_blank"
+                >
+                  View Website
+                </a>
+                <!-- <a href="">
+                                      <button class="btn default project-btn">Source Code</button>
+                                    </a> -->
               </div>
             </div>
 
-            <h3>To Do List</h3>
-            <p class="project-skill">HTML CSS Javascript</p>
-            <!-- <a
-              class="btn project-btn"
-              href="https://radiant-mesa-77114.herokuapp.com/"
-              target="_blank"
-            >
-              View Project
-            </a> -->
-            <a
-              class="btn project-btn"
-              href="https://github.com/rsoria21/Todolist"
-              target="_blank"
-            >
-              Source Code
-            </a>
+            <div class="column">
+              <div class="card">
+                <div class="project-container">
+                  <img
+                    src="/images/eaguns copy.png"
+                    alt="EAgunstx"
+                    class="project-image"
+                  />
+                  <div class="project-overlay">
+                    <div class="overlay-text">
+                      This website was created for a local gun shop looking to
+                      get away from the online cookie cutter gun stores. This
+                      website was created using Wordpress. This website
+                      showcases many guns and knives, and continues to grow.
+                      Website set up with contact form and SEO implementation.
+                    </div>
+                  </div>
+                </div>
+                <h3>EAgunstx</h3>
+                <p class="project-skill">Wordpress YoastSeo</p>
+                <a
+                  class="btn project-btn"
+                  href="https://eagunstx.com"
+                  target="_blank"
+                >
+                  View Website
+                </a>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="project-container">
+                  <img
+                    src="/images/chefEvan.png"
+                    alt="Chef Evan website image"
+                    class="project-image"
+                  />
+                  <div class="project-overlay">
+                    <div class="overlay-text">
+                      This is a web app that is using NPM libraries, such as
+                      express, body parser, and EJS for templating. The web app
+                      adds items and deletes them with a click of a button. New
+                      to do list can be created by adding a “/” and a name of
+                      your choice(this will be the list name.)
+                    </div>
+                  </div>
+                </div>
+
+                <h3>Chef Evan</h3>
+                <p class="project-skill">HTML CSS Javascript</p>
+                <!-- <a
+                      class="btn project-btn"
+                      href="https://radiant-mesa-77114.herokuapp.com/"
+                      target="_blank"
+                    >
+                      View Project
+                    </a> -->
+                <a class="btn project-btn" href="#" target="_blank">
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-row">
+            <div class="column">
+              <div class="card">
+                <div class="project-container">
+                  <img
+                    src="/images/fernandoG.png"
+                    alt="Image of Fernandogamino.com"
+                    class="project-image"
+                  />
+                  <div class="project-overlay">
+                    <div class="overlay-text">
+                      This website was created for a local construction company
+                      using Wordpress. This website showcases heavy machinery,
+                      with contact form and SEO implementation. Wordpress
+                    </div>
+                  </div>
+                </div>
+                <h3>Fernando Gamino</h3>
+                <p class="project-skill">HTML CSS Javascript</p>
+                <a
+                  class="btn project-btn"
+                  href="https://fernandogamino.com"
+                  target="_blank"
+                >
+                  View Website
+                </a>
+                <!-- <a href="">
+                          <button class="btn default project-btn">Source Code</button>
+                        </a> -->
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="project-container">
+                  <img
+                    src="/images/journal copy.png"
+                    alt="journal website"
+                    class="project-image"
+                  />
+                  <div class="project-overlay">
+                    <div class="overlay-text">
+                      This is a web page that allows a safe space for users to
+                      share their thoughts. This web page uses EJS for
+                      templating with some CSS and Javascript to display the
+                      proper pages. Give it a try just add “/compose” to the end
+                      of the URL to add a log
+                    </div>
+                  </div>
+                </div>
+                <h3>Journal Website</h3>
+                <p class="project-skill">HTML CSS Javascript</p>
+                <!-- <a class="btn default project-btn" href="#" target="_blank">
+                      View Project
+                    </a> -->
+                <a
+                  class="btn project-btn"
+                  href="https://github.com/rsoria21/Journal"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="project-container">
+                  <img
+                    src="/images/casaDelPastel.png"
+                    alt="Casa Del Pastel Image"
+                    class="project-image"
+                  />
+                  <div class="project-overlay">
+                    <div class="overlay-text">
+                      This website was created for a local gun shop looking to
+                      get away from the online cookie cutter gun stores. This
+                      website was created using Wordpress. This website
+                      showcases many guns and knives, and continues to grow.
+                      Website set up with contact form and SEO implementation.
+                    </div>
+                  </div>
+                </div>
+                <h3>Casa Del Pastel</h3>
+                <p class="project-skill">HTML CSS Javascript</p>
+                <a class="btn project-btn" href="#" target="_blank">
+                  View Website
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- End of Sites Section -->
       </div>
-      <div class="project-row">
-        <div class="column">
-          <div class="card">
-            <div class="project-container">
-              <img
-                src="/images/cielifts copy.png"
-                alt="converse industrial equipment"
-                class="project-image"
-              />
-              <div class="project-overlay">
-                <div class="overlay-text">
-                  This website was created for a local construction company
-                  using Wordpress. This website showcases heavy machinery, with
-                  contact form and SEO implementation. Wordpress
-                </div>
-              </div>
-            </div>
-            <h3>Website CIElifts</h3>
-            <p class="project-skill">Wordpress YoastSeo</p>
-            <a
-              class="btn project-btn"
-              href="https://cielifts.com"
-              target="_blank"
-            >
-              View Website
-            </a>
-            <!-- <a href="">
-                  <button class="btn default project-btn">Source Code</button>
-                </a> -->
-          </div>
-        </div>
+      <div id="other-work" data-tab-content>
+        <!-- Start of Other Work Section -->
 
-        <div class="column">
-          <div class="card">
-            <div class="project-container">
-              <img
-                src="/images/journal copy.png"
-                alt="journal website"
-                class="project-image"
-              />
-              <div class="project-overlay">
-                <div class="overlay-text">
-                  This is a web page that allows a safe space for users to share
-                  their thoughts. This web page uses EJS for templating with
-                  some CSS and Javascript to display the proper pages. Give it a
-                  try just add “/compose” to the end of the URL to add a log
-                </div>
-              </div>
-            </div>
-            <h3>Journal Website</h3>
-            <p class="project-skill">HTML CSS Javascript</p>
-            <!-- <a class="btn default project-btn" href="#" target="_blank">
-              View Project
-            </a> -->
-            <a
-              class="btn project-btn"
-              href="https://github.com/rsoria21/Journal"
-              target="_blank"
-            >
-              Source Code
-            </a>
-          </div>
-        </div>
+        <div class="projects header-img" id="projects">
+          <h2 class="project-heading">Projects!</h2>
+          <p class="project-text">
+            Check out some of the projects ive worked on.
+          </p>
 
-        <div class="column">
-          <div class="card">
-            <div class="project-container">
-              <img
-                src="/images/eaguns copy.png"
-                alt="EAgunstx"
-                class="project-image"
-              />
-              <div class="project-overlay">
-                <div class="overlay-text">
-                  This website was created for a local gun shop looking to get
-                  away from the online cookie cutter gun stores. This website
-                  was created using Wordpress. This website showcases many guns
-                  and knives, and continues to grow. Website set up with contact
-                  form and SEO implementation.
+          <div class="project-row">
+            <div class="column">
+              <div class="card">
+                <div class="project-container">
+                  <img
+                    src="/images/dice copy.png"
+                    alt="diceroll app"
+                    class="project-image"
+                  />
+                  <div class="project-overlay">
+                    <div class="overlay-text">
+                      This is a dice roll web app, it’s a dice roll on the go.
+                      The project uses Javascript to process the random output,
+                      with some HTML and CSS to help give the app some pop.
+                    </div>
+                  </div>
                 </div>
+                <h3>Dice Roll Web App</h3>
+                <p class="project-skill">HTML CSS Javascript</p>
+
+                <!-- <a class="btn project-btn" href="#"> View Project </a> -->
+                <a
+                  class="btn project-btn"
+                  href="https://github.com/rsoria21/DiceRoll"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
               </div>
             </div>
-            <h3>Website EAgunstx</h3>
-            <p class="project-skill">Wordpress YoastSeo</p>
-            <a
-              class="btn project-btn"
-              href="https://eagunstx.com"
-              target="_blank"
-            >
-              View Website
-            </a>
+
+            <div class="column">
+              <div class="card">
+                <div class="project-container">
+                  <img
+                    src="/images/drumset copy.png"
+                    alt="drumset web app"
+                    class="project-image"
+                  />
+                  <div class="project-overlay">
+                    <div class="overlay-text">
+                      This web app is an awesome drum set, press the buttons on
+                      the screen to play the instrument. This project contains
+                      HTML for formatting, CSS for style and photos, and finally
+                      Javascript for the brains and sounds.
+                    </div>
+                  </div>
+                </div>
+                <h3>DrumSet Web App</h3>
+                <p class="project-skill">HTML CSS Javascript</p>
+                <!-- <a class="btn project-btn" href="#"> View Project </a> -->
+                <a
+                  class="btn project-btn"
+                  href="https://github.com/rsoria21/drumSet"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="project-container">
+                  <img
+                    src="/images/todolist copy.png"
+                    alt="Avatar"
+                    class="project-image"
+                  />
+                  <div class="project-overlay">
+                    <div class="overlay-text">
+                      This is a web app that is using NPM libraries, such as
+                      express, body parser, and EJS for templating. The web app
+                      adds items and deletes them with a click of a button. New
+                      to do list can be created by adding a “/” and a name of
+                      your choice(this will be the list name.)
+                    </div>
+                  </div>
+                </div>
+
+                <h3>To Do List</h3>
+                <p class="project-skill">HTML CSS Javascript</p>
+                <!-- <a
+                      class="btn project-btn"
+                      href="https://radiant-mesa-77114.herokuapp.com/"
+                      target="_blank"
+                    >
+                      View Project
+                    </a> -->
+                <a
+                  class="btn project-btn"
+                  href="https://github.com/rsoria21/Todolist"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-row">
+            <div class="column">
+              <div class="card">
+                <div class="project-container">
+                  <img
+                    src="/images/cielifts copy.png"
+                    alt="converse industrial equipment"
+                    class="project-image"
+                  />
+                  <div class="project-overlay">
+                    <div class="overlay-text">
+                      This website was created for a local construction company
+                      using Wordpress. This website showcases heavy machinery,
+                      with contact form and SEO implementation. Wordpress
+                    </div>
+                  </div>
+                </div>
+                <h3>Website CIElifts</h3>
+                <p class="project-skill">Wordpress YoastSeo</p>
+                <a
+                  class="btn project-btn"
+                  href="https://cielifts.com"
+                  target="_blank"
+                >
+                  View Website
+                </a>
+                <!-- <a href="">
+                          <button class="btn default project-btn">Source Code</button>
+                        </a> -->
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="project-container">
+                  <img
+                    src="/images/journal copy.png"
+                    alt="journal website"
+                    class="project-image"
+                  />
+                  <div class="project-overlay">
+                    <div class="overlay-text">
+                      This is a web page that allows a safe space for users to
+                      share their thoughts. This web page uses EJS for
+                      templating with some CSS and Javascript to display the
+                      proper pages. Give it a try just add “/compose” to the end
+                      of the URL to add a log
+                    </div>
+                  </div>
+                </div>
+                <h3>Journal Website</h3>
+                <p class="project-skill">HTML CSS Javascript</p>
+                <!-- <a class="btn default project-btn" href="#" target="_blank">
+                      View Project
+                    </a> -->
+                <a
+                  class="btn project-btn"
+                  href="https://github.com/rsoria21/Journal"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="project-container">
+                  <img
+                    src="/images/eaguns copy.png"
+                    alt="EAgunstx"
+                    class="project-image"
+                  />
+                  <div class="project-overlay">
+                    <div class="overlay-text">
+                      This website was created for a local gun shop looking to
+                      get away from the online cookie cutter gun stores. This
+                      website was created using Wordpress. This website
+                      showcases many guns and knives, and continues to grow.
+                      Website set up with contact form and SEO implementation.
+                    </div>
+                  </div>
+                </div>
+                <h3>Website EAgunstx</h3>
+                <p class="project-skill">Wordpress YoastSeo</p>
+                <a
+                  class="btn project-btn"
+                  href="https://eagunstx.com"
+                  target="_blank"
+                >
+                  View Website
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- End of Other Work Section -->
       </div>
     </div>
-    <!-- contact -->
+    <!-- Projects End -->
+    <!-- Contact -->
 
     <div class="contact-column second-column">
       <h2 id="contact" class="contact-header">Let's Talk!</h2>
@@ -364,17 +586,18 @@
         <a href="https://github.com/rsoria21" target="_blank"
           ><i class="social-icon fab fa-github"></i
         ></a>
-        <a href="/images/Main-Resume.pdf" target="_blank"
+        <!-- <a href="/images/Main-Resume.pdf" target="_blank"
           ><i class="social-icon far fa-file"></i
-        ></a>
+        ></a> -->
       </div>
     </div>
 
-    <!-- end of contact -->
+    <!-- End of Contact -->
 
-    <!-- footer -->
+    <!-- Footer -->
     <footer>&copy; TeddyCodes 2021</footer>
     <!-- <div>&copy; Ricardo Soria 2021</div> -->
+    <!-- Footer End-->
 
     <!-- js script -->
     <script src="/JS/script.js"></script>
