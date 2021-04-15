@@ -104,8 +104,7 @@ body {
 
 .mySlides {
   display: none;
-  padding: 5rem 6rem;
-  /* margin: 3rem 0; */
+  padding: 5rem 16rem;
   /* background: rgb(216, 216, 216); */
   background: rgb(216, 216, 216);
 }
@@ -248,14 +247,15 @@ body {
   font-size: 2rem;
   /* padding: 2rem; */
   color: #f2f2f2;
+  transition: 0.4s;
 }
 
 .tab.active {
-  background-color: #ccc;
+  background-color: #1b1b1bcb;
 }
 
 .tab:hover {
-  background-color: #aaa;
+  background-color: #00000079;
 }
 
 /* .tab-content {
