@@ -106,6 +106,59 @@ body {
   }
 }
 
+.fade-in-text {
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* Start Skills NEW */
 /* Needed This */
 .skill-logo-container {
@@ -621,6 +674,23 @@ footer {
   border-color: #ebebeb;
   background: #00000079;
   /* background-color: #006da079; */
+}
+.animate-top {
+  position: relative;
+  /* animation: animatetop 0.4s; */
+  animation: animatetop 2s;
+}
+
+@keyframes animatetop {
+  from {
+    /* top: -300px; */
+    top: 600px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 /* project buttons */
 .btn-container {
