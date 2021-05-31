@@ -14,6 +14,9 @@ body {
   background-size: 400%;
   animation: bg-animation 300s infinite alternate;
 }
+h3 {
+  color: #ebebeb;
+}
 
 /* navbar */
 .navbar {
@@ -447,8 +450,8 @@ body {
 }
 
 .project-skill {
+  color: #ebebeb;
   margin-bottom: 30px;
-  font-family: "Roboto Slab", serif;
 }
 
 .project-container {
@@ -654,7 +657,6 @@ footer {
   font-size: 16px;
   cursor: pointer;
   text-decoration: none;
-  font-family: "Roboto Slab", serif;
   transition: 0.5s;
 }
 
