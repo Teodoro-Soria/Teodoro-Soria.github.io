@@ -180,6 +180,7 @@ h3 {
     #4856f3a9 23%,
     #0d1edabd 80%
   );
+  z-index: -1;
   animation: wave 8s ease-in-out infinite;
 }
 
@@ -213,6 +214,7 @@ h3 {
   position: absolute;
   top: -8%;
   right: 10%;
+  z-index: -1;
   opacity: 0.4;
   animation: wave 15s ease-in-out infinite;
 }
@@ -224,6 +226,7 @@ h3 {
   top: 40%;
   right: 25%;
   opacity: 0.5;
+  z-index: -1;
   transform: rotate(90deg);
   animation: wave 15s ease-in-out infinite;
 }
