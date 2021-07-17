@@ -11,6 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
   /* background: rgb(19, 19, 19); */
   background-image: radial-gradient(#332ba5, #0096db79, #1d1680);
+  /* background: radial-gradient(#332ba5, #0096db79, #1d1680); */
   background-size: 400%;
   animation: bg-animation 300s infinite alternate;
 }
@@ -22,11 +23,8 @@ h3 {
 .navbar {
   border: 0.5px solid #ebebeb;
   background-color: #0096db79;
-  /* background: rgba(51, 51, 51, 0.295); */
-  /* position: fixed; */
   overflow: hidden;
   padding: 1rem 2rem;
-  /* top: 0; */
   width: 90%;
   z-index: 1;
   border-radius: 5rem;
@@ -54,26 +52,12 @@ h3 {
 }
 
 .navbar a.active {
-  /* background-color: #4caf50; */
   color: white;
 }
 
 .navbar .icon {
   display: none;
 }
-
-/* @media screen and (max-width: 700px) {
-  .navbar a:not(:first-child) {
-    display: none;
-  }
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-  .navbar a.logo {
-    float: left;
-  }
-} */
 
 @media screen and (max-width: 700px) {
   .navbar.responsive {
@@ -96,7 +80,6 @@ h3 {
 /* header */
 
 .header-img {
-  background: grey;
   background: radial-gradient(#332ba5, #0096db79, #1d1680);
   background-size: 400%;
   animation: bg-animation 500s infinite alternate;
@@ -387,12 +370,12 @@ h3 {
   }
 }
 
-/* End Skills Old */
+/* End Skills */
 
 /* about */
 
 .about-row {
-  background-color: #177faf79;
+  background-color: #1754af79;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -651,7 +634,10 @@ h3 {
   flex: 50%;
   padding: 10px 20px;
   height: 90vh;
-  background-color: #006da079;
+  /* background: radial-gradient(#332ba5, #0096db79, #1d1680);
+  background-size: 400%;
+  animation: bg-animation 500s infinite alternate; */
+  background-color: #1754af79;
 }
 
 @media screen and (max-width: 700px) {
@@ -676,7 +662,7 @@ h3 {
 .contact-area {
   padding: 10%;
 
-  background-color: rgba(140, 218, 241, 0.521);
+  /* background-color: rgba(140, 218, 241, 0.521); */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -702,7 +688,13 @@ h3 {
 
 /* Footer */
 footer {
-  background: rgb(216, 216, 216);
+  background-image: linear-gradient(
+    #0096db,
+    #38ade4,
+    #4cb7e9,
+    #38ade4,
+    #0096db
+  );
 }
 /* End of Footer */
 
