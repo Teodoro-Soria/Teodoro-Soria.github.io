@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Here to help with your website with HTML, CSS, and Javascript. Let's get started on your next project together."
+      content="Web Developer here to help with your website. I can assit with HTML, CSS, and Javascript. Let's get started on your next project together."
+      data-react-helmet="true"
     />
+    <meta name="title" content="Web Developer" data-react-helmet="true" />
     <!-- CSS -->
     <link rel="stylesheet" href="/CSS/style.css" />
 
@@ -31,9 +33,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap"
       rel="stylesheet"
     />
-    <title>Ricardo Soria | San Antonio Web Developer</title>
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+    <link rel="stylesheet" href="" />
+    <title>Ricardo Soria | San Antonio Web Developer</title>
   </head>
   <body>
     <!-- header -->
@@ -71,14 +74,18 @@
     <div class="slideshow-container">
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <img class="skill-image" src="/images/github.png" />
+        <img class="skill-image" src="/images/github.png" alt="Github logo" />
         <div class="text">
           Dont worry, your code is safe. I know version control with GitHub.
         </div>
       </div>
 
       <div class="mySlides fade">
-        <img class="skill-image" src="/images/Bootstrap.png" />
+        <img
+          class="skill-image"
+          src="/images/Bootstrap.png"
+          alt="Bootstrap logo"
+        />
         <div class="text">
           I know some pretty cool libraries too. Like BootStrap, it helps me
           code a bit faster!
@@ -86,7 +93,7 @@
       </div>
 
       <div class="mySlides fade">
-        <img class="skill-image" src="/images/python.png" />
+        <img class="skill-image" src="/images/python.png" alt="Python logo" />
         <div class="text">
           Hey check it out I also know some Python, and currently playing with
           it's many libraries.
@@ -94,7 +101,11 @@
       </div>
 
       <div class="mySlides fade">
-        <img class="skill-image" src="/images/react-logo.png" />
+        <img
+          class="skill-image"
+          src="/images/react-logo.png"
+          alt="React logo"
+        />
         <div class="text">
           Oh yes, I also know some React. It really helps with creating
           interactive UIs.
@@ -102,7 +113,11 @@
       </div>
 
       <div class="mySlides fade">
-        <img class="skill-image" src="/images/wplogo.png" />
+        <img
+          class="skill-image"
+          src="/images/wplogo.png"
+          alt="Wordpress logo"
+        />
         <div class="text">
           Did you need something built with Wordpress? I can help with that too!
         </div>
@@ -567,7 +582,6 @@
       <h2 id="contact" class="contact-header">Let's Talk!</h2>
       <p class="contact-name">Ricardo T. Soria <br />"Rick"</p>
       <p class="contact-text">San Antonio, TX</p>
-      <!-- <p class="contact-text">ricardosoriadevelops@gmail.com</p> -->
 
       <a class="btn default contact-btn" href="/contactForm2/contact.html"
         >Contact Me</a
