@@ -314,3 +314,20 @@ form .submit:hover {
   cursor: pointer;
 }
 /* FORM END */
+
+/* Footer */
+footer {
+  background-image: linear-gradient(
+    #0096db,
+    #38ade4,
+    #4cb7e9,
+    #38ade4,
+    #0096db
+  );
+}
+
+.social-icon {
+  margin: 20px 10px;
+  color: #242424;
+}
+/* End of Footer */
