@@ -58,6 +58,9 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+  .navbar {
+    width: 75%;
+  }
   .navbar.responsive {
     position: relative;
   }
