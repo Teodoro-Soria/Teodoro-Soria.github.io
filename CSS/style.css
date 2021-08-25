@@ -506,9 +506,9 @@ h3 {
   }
 }
 
-/* end of about */
+/* END of About */
 
-/* PROJECTS */
+/* START PROJECTS */
 /* Start of Tab Section */
 [data-tab-content] {
   display: none;
@@ -546,6 +546,7 @@ h3 {
 }
 
 .tab.active {
+  border: 2px solid #ebebeb;
   background-color: #1b1b1bcb;
 }
 
