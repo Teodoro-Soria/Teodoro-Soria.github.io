@@ -280,6 +280,11 @@ body {
   /* margin: 20px 20px 50px; */
   margin: 0 20px;
 }
+.skill-logo-big {
+  width: 25%;
+  /* margin: 20px 20px 50px; */
+  margin: 0;
+}
 
 .right-col {
   float: right;
@@ -290,7 +295,7 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .content {
     flex-direction: column;
   }
@@ -300,6 +305,9 @@ body {
   .about-text {
     font-size: 1.75rem;
     margin: 5.25rem 4rem 0 4rem;
+  }
+  .skill-logo-big {
+    width: 17%;
   }
 }
 @media screen and (max-width: 700px) {
@@ -320,6 +328,10 @@ body {
   }
   .skill-logo {
     margin: 5px 10px;
+  }
+  .skill-logo-big {
+    width: 16%;
+    margin: 0 5px;
   }
 }
 /* Demo END */
