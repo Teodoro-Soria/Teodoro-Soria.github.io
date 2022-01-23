@@ -1,6 +1,5 @@
 html {
   text-align: center;
-  overflow: hidden;
 }
 * {
   box-sizing: border-box;
@@ -255,7 +254,7 @@ h3 {
   .shapes:nth-of-type(1) {
     position: absolute;
     top: 2000px;
-    left: 309px;
+    left: 80px;
     width: 400px;
     height: 400px;
     background: linear-gradient(
@@ -271,7 +270,7 @@ h3 {
   .shapes:nth-of-type(2) {
     position: absolute;
     top: 6000px;
-    left: 109px;
+    left: 80px;
     width: 400px;
     height: 400px;
     background: linear-gradient(
