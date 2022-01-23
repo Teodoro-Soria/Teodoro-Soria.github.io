@@ -251,10 +251,10 @@ h3 {
 @media screen and (max-width: 700px) {
   .shapes:nth-of-type(1) {
     position: absolute;
-    top: 2000px;
-    left: 80px;
-    width: 300px;
-    height: 300px;
+    top: 1445px;
+    left: 70px;
+    width: 350px;
+    height: 350px;
     background: linear-gradient(
       64deg,
       #4856f3a9 23%,
